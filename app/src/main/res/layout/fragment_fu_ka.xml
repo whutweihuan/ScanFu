@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:horizontalSpacing="http://schemas.android.com/apk/res-auto"
+    android:background="@color/eee"
+    tools:context="scanfu.com.UI.FuKaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="福卡"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/btn_hongbao"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="红包"
+                android:textColor="@drawable/text_style_hongbao"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridView
+                android:id="@+id/gv_fuka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:layout_alignParentBottom="true"
+                android:padding="0dp"
+                android:horizontalSpacing="0dp"
+                android:numColumns="5"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/gv_fuka"
+                android:background="@drawable/fu_ka_bg"
+                android:layout_margin="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_fuka_display_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fu_ka_zi_bg"
+                    android:gravity="center"
+                    android:text="奋斗福"
+                    android:textColor="@color/fu_zi_you"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_send_fu_ka"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn_sytle_send_fuka"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:text="送给好友" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="340 寝室共分 7 亿红包"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17sp"
+                    android:layout_above="@id/btn_send_fu_ka"
+                    android:layout_marginBottom="15dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

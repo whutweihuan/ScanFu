@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="scanfu.com.UI.MainUIActivity">
+
+    <scanfu.com.UI.ToolBarRadioGroup xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <scanfu.com.UI.ToolBarRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="福卡"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/toolbar_btn_fuca_normal"
+            app:focus_color="@color/blue"
+            app:focus_icon="@drawable/toolbar_btn_fuca_focus"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+        <scanfu.com.UI.ToolBarRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="扫描"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/toolbar_btn_saomiao_normal"
+            app:focus_color="@color/blue"
+            app:focus_icon="@drawable/toolbar_btn_saomiao_focus"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+        <scanfu.com.UI.ToolBarRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="好友"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/toolbar_btn_frend_normal"
+            app:focus_color="@color/blue"
+            app:focus_icon="@drawable/toolbar_btn_frend_focus"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+        <scanfu.com.UI.ToolBarRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="我"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/toolbar_btn_me_normal"
+            app:focus_color="@color/blue"
+            app:focus_icon="@drawable/toolbar_btn_me_focus"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+    </scanfu.com.UI.ToolBarRadioGroup>
+    
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f3fefe"
+        android:layout_above="@id/radiogroup" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line"/>
+
+</RelativeLayout>

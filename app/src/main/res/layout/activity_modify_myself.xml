@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify_myself"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="scanfu.com.me.ModifyMyselfActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/btn_back_style"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="0dp"
+            android:onClick="onCancel"
+            android:text="返回"
+            android:textColor="@drawable/text_back_style"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="保存"
+            android:onClick="onSave"
+            android:textColor="@drawable/text_style_hongbao"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:paddingLeft="25dp"
+        android:maxLength="50"
+        android:textSize="17sp"
+        android:text="title"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/blue"
+        />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="描述"
+        android:textSize="14sp"
+        android:layout_margin="25dp"
+        android:textColor="@color/_999999"/>
+
+</LinearLayout>

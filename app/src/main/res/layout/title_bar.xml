@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/title_bg">
+
+    <Button
+        android:id="@+id/btn_backup"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:drawablePadding="0dp"
+        android:drawableLeft="@drawable/btn_back_style"
+        android:gravity="left|center_vertical"
+        android:onClick="onBackUp"
+        android:text="返回"
+        android:textColor="@drawable/text_back_style"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="注     册"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:onClick="onUpLoad"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="@drawable/text_style_hongbao"
+        android:textSize="15sp" />
+
+</RelativeLayout>

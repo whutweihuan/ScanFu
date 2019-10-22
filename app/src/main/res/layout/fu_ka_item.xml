@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="110dp"
+    android:background="@null"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/iv_fuka_item"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fu_item_bg_you" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fuka_number_bg_you"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/iv_fuka_item_select"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fu_ka_select_bg" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="奋斗福"
+        android:textColor="@color/fu_zi_you"
+        android:textSize="20sp" />
+
+
+
+
+</LinearLayout>

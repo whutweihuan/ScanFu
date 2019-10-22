@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sao_ma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eee"
+    tools:context="scanfu.com.saomiao.SaoMaActivity">
+
+    <include android:id="@+id/include_title"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/a0a0a0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/v_line"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="再来一次"
+            android:textColor="@drawable/text_style_hongbao"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/v_line"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="以后再说"
+            android:textColor="@drawable/text_style_hongbao"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_select"
+        android:layout_below="@id/include_title"
+        android:layout_margin="30dp"
+        android:background="@drawable/fu_ka_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/fu_ka_zi_bg"
+            android:gravity="center"
+            android:text="奋斗福"
+            android:textColor="@color/fu_zi_you"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_send_fu_ka"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_sytle_send_fuka"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="送给朋友" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="340 寝室共分 7 亿红包"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:layout_above="@id/btn_send_fu_ka"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
